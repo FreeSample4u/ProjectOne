@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TANAH AIR Resto & Cafe | TVRI Senayan, Jakarta</title>
+<meta name="description" content="TANAH AIR Resto & Cafe — masakan Nusantara dengan tampilan kekinian, di dalam kompleks TVRI Senayan, Jakarta Pusat. Rating 4.9 dari 112 ulasan. Buka setiap hari 08.00–21.00.">
+<meta property="og:title" content="TANAH AIR Resto & Cafe | TVRI Senayan, Jakarta">
+<meta property="og:description" content="Masakan Nusantara rasa rumah, tampilan kekinian. Reservasi meja & order online di TANAH AIR Resto & Cafe, TVRI Senayan.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TANAH AIR Resto & Cafe">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TANAH AIR Resto & Cafe | TVRI Senayan, Jakarta">
+<meta name="twitter:description" content="Masakan Nusantara rasa rumah, tampilan kekinian. Reservasi meja & order online di TANAH AIR Resto & Cafe, TVRI Senayan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#F7EFDC;
+  --cream-2:#FCF6E8;
+  --paper:#FFFDF6;
+  --ink:#43121D;
+  --ink-soft:#6E2733;
+  --yellow:#F3BB16;
+  --yellow-deep:#D99E00;
+  --rattan:#AE3B3B;
+  --rattan-deep:#8B2C2C;
+  --lavender:#DECBEA;
+  --lavender-deep:#B98FCB;
+  --sage:#7C8C55;
+  --line:rgba(67,18,29,0.14);
+  --shadow: 0 14px 34px rgba(67,18,29,0.16);
+  --radius: 22px;
+  --disp: 'Baloo 2', system-ui, sans-serif;
+  --body: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --mono: 'Space Mono', monospace;
+}
+*{box-sizing:border-box; margin:0; padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:var(--body);
+  background:var(--cream);
+  color:var(--ink);
+  line-height:1.55;
+  overflow-x:hidden;
+}
+img{max-width:100%; display:block;}
+a{color:inherit; text-decoration:none;}
+ul{list-style:none;}
+button{font-family:inherit; cursor:pointer; border:none;}
+input,textarea,select{font-family:inherit; font-size:1rem;}
+.wrap{max-width:1180px; margin:0 auto; padding:0 24px;}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto;}
+  *{animation-duration:0.01ms !important; transition-duration:0.01ms !important;}
+}
+
+/* ---------- shared bits ---------- */
+.eyebrow{
+  font-family:var(--mono);
+  text-transform:uppercase;
+  letter-spacing:.14em;
+  font-size:.72rem;
+  color:var(--rattan-deep);
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+}
+.eyebrow::before{content:"";width:20px;height:2px;background:var(--rattan);display:inline-block;}
+h1,h2,h3,.disp{font-family:var(--disp); font-weight:700; color:var(--ink); line-height:1.08;}
+.section-head{max-width:640px; margin-bottom:44px;}
+.section-head h2{font-size:clamp(1.8rem,4vw,2.6rem); margin-top:10px;}
+.section-head p{margin-top:12px; color:var(--ink-soft); font-size:1.03rem;}
+section{padding:88px 0; position:relative;}
+.btn{
+  display:inline-flex; align-items:center; gap:10px;
+  padding:14px 26px; border-radius:100px;
+  font-weight:700; font-size:.95rem;
+  transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
+}
+.btn-primary{background:var(--rattan); color:var(--cream-2); box-shadow:0 10px 22px rgba(174,59,59,.35);}
+.btn-primary:hover{transform:translateY(-2px); box-shadow:0 14px 26px rgba(174,59,59,.42); background:var(--rattan-deep);}
+.btn-ghost{background:transparent; color:var(--ink); border:2px solid var(--ink); }
+.btn-ghost:hover{background:var(--ink); color:var(--cream-2);}
+.btn-yellow{background:var(--yellow); color:var(--ink);}
+.btn-yellow:hover{background:var(--yellow-deep); transform:translateY(-2px);}
+.price-tag{
+  font-family:var(--mono); font-weight:700; font-size:.82rem;
+  border:2px solid currentColor; border-radius:8px;
+  padding:2px 9px; display:inline-block;
+}
+.reveal{opacity:0; transform:translateY(26px); transition:opacity .7s ease, transform .7s ease;}
+.reveal.in{opacity:1; transform:translateY(0);}
+
+/* ---------- header ---------- */
+header{
+  position:sticky; top:0; z-index:100;
+  background:rgba(247,239,220,.92);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.nav{display:flex; align-items:center; justify-content:space-between; padding:14px 0;}
+.logo{font-family:var(--disp); font-weight:800; font-size:1.5rem; color:var(--rattan-deep); display:flex; flex-direction:column; line-height:.85;}
+.logo span{font-family:var(--mono); font-weight:400; font-size:.55rem; letter-spacing:.2em; color:var(--ink-soft); margin-top:5px;}
+.nav-links{display:flex; align-items:center; gap:22px; flex-wrap:wrap;}
+.nav-links a{font-size:.87rem; font-weight:600; color:var(--ink-soft); position:relative; padding:4px 0;}
+.nav-links a::after{content:"";position:absolute; left:0; bottom:-2px; width:0; height:2px; background:var(--rattan); transition:width .2s;}
+.nav-links a:hover::after{width:100%;}
+.nav-links a:hover{color:var(--ink);}
+.nav-cta{display:flex; gap:10px; align-items:center;}
+.burger{display:none; flex-direction:column; gap:5px; background:none; padding:6px;}
+.burger span{width:24px; height:2.5px; background:var(--ink); border-radius:2px;}
+@media (max-width:980px){
+  .nav-links{position:fixed; top:68px; left:0; right:0; background:var(--cream-2); flex-direction:column; align-items:flex-start; padding:20px 24px; gap:14px; border-bottom:1px solid var(--line); transform:translateY(-130%); transition:transform .3s ease; max-height:70vh; overflow:auto;}
+  .nav-links.open{transform:translateY(0);}
+  .burger{display:flex;}
+  .nav-cta .btn-ghost{display:none;}
+}
+
+/* ---------- hero ---------- */
+.hero{padding:64px 0 40px; position:relative;}
+.hero-grid{display:grid; grid-template-columns:1.1fr .9fr; gap:50px; align-items:center;}
+.hero h1{font-size:clamp(2.5rem,5.6vw,4.1rem); margin-top:14px;}
+.hero h1 em{font-style:normal; color:var(--rattan);}
+.hero p.lead{margin-top:20px; font-size:1.12rem; color:var(--ink-soft); max-width:480px;}
+.hero-actions{margin-top:30px; display:flex; gap:14px; flex-wrap:wrap;}
+.hero-meta{margin-top:34px; display:flex; gap:26px; flex-wrap:wrap;}
+.hero-meta .item{display:flex; align-items:center; gap:10px; font-size:.88rem; color:var(--ink-soft); font-weight:600;}
+.hero-meta .dot{width:8px;height:8px;border-radius:50%;background:var(--sage);}
+.hero-art{position:relative; height:460px;}
+.card-float{
+  position:absolute; border-radius:18px; box-shadow:var(--shadow);
+  padding:20px; font-family:var(--disp);
+}
+.card-1{background:var(--yellow); width:230px; top:0; left:20px; transform:rotate(-6deg); z-index:3;}
+.card-2{background:var(--lavender); width:210px; bottom:30px; right:0; transform:rotate(5deg); z-index:2;}
+.card-3{background:var(--paper); width:190px; top:130px; right:60px; transform:rotate(-3deg); z-index:4; border:2px solid var(--ink);}
+.card-float h4{font-size:1.05rem; margin-bottom:6px;}
+.card-float p{font-family:var(--body); font-size:.78rem; color:var(--ink-soft); font-weight:500;}
+.rating-badge{
+  position:absolute; left:0; bottom:0; background:var(--ink); color:var(--cream);
+  border-radius:18px; padding:16px 20px; display:flex; align-items:center; gap:14px;
+  box-shadow:var(--shadow); z-index:5;
+}
+.rating-badge .num{font-family:var(--disp); font-size:2.1rem; font-weight:800; color:var(--yellow);}
+.rating-badge .stars{color:var(--yellow); letter-spacing:2px; font-size:.9rem;}
+.rating-badge small{display:block; font-size:.7rem; color:var(--cream); opacity:.75; margin-top:2px;}
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr;}
+  .hero-art{height:360px; margin-top:20px;}
+}
+
+/* ---------- marquee ---------- */
+.marquee{background:var(--ink); color:var(--cream); padding:14px 0; overflow:hidden;}
+.marquee-track{display:flex; gap:50px; white-space:nowrap; animation:scroll-left 26s linear infinite; width:max-content;}
+.marquee-track span{font-family:var(--disp); font-size:1rem; letter-spacing:.04em; display:flex; align-items:center; gap:14px;}
+.marquee-track span::after{content:"✦"; color:var(--yellow);}
+@keyframes scroll-left{from{transform:translateX(0)} to{transform:translateX(-50%)}}
+
+/* ---------- whats new ---------- */
+.new-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
+.new-card{background:var(--paper); border-radius:var(--radius); padding:28px; border:1px solid var(--line); transition:transform .25s ease, box-shadow .25s ease;}
+.new-card:hover{transform:translateY(-6px); box-shadow:var(--shadow);}
+.new-card .tag{font-family:var(--mono); font-size:.68rem; text-transform:uppercase; letter-spacing:.1em; background:var(--yellow); color:var(--ink); padding:4px 10px; border-radius:100px; display:inline-block;}
+.new-card h3{font-size:1.25rem; margin-top:16px;}
+.new-card p{margin-top:10px; color:var(--ink-soft); font-size:.92rem;}
+@media (max-width:900px){.new-grid{grid-template-columns:1fr;}}
+
+/* ---------- menu ---------- */
+.menu-section{background:var(--ink); color:var(--cream);}
+.menu-section .eyebrow{color:var(--yellow);}
+.menu-section .section-head h2{color:var(--cream);}
+.menu-section .section-head p{color:rgba(247,239,220,.72);}
+.tabs{display:flex; gap:10px; flex-wrap:wrap; margin-bottom:34px;}
+.tab-btn{padding:10px 18px; border-radius:100px; background:rgba(247,239,220,.08); color:var(--cream); font-weight:700; font-size:.85rem; border:1px solid rgba(247,239,220,.2); transition:all .2s;}
+.tab-btn.active,.tab-btn:hover{background:var(--yellow); color:var(--ink); border-color:var(--yellow);}
+.menu-panel{display:none;}
+.menu-panel.active{display:block; animation:fadeIn .4s ease;}
+@keyframes fadeIn{from{opacity:0; transform:translateY(8px)} to{opacity:1; transform:translateY(0)}}
+.menu-note{font-family:var(--mono); font-size:.72rem; color:rgba(247,239,220,.55); margin-bottom:22px;}
+.menu-list{display:grid; grid-template-columns:repeat(2,1fr); gap:0 40px;}
+.menu-item{padding:18px 0; border-bottom:1px solid rgba(247,239,220,.14); display:flex; justify-content:space-between; gap:16px; align-items:flex-start;}
+.menu-item .mi-name{font-family:var(--disp); font-size:1.06rem; font-weight:600;}
+.menu-item .mi-desc{font-size:.82rem; color:rgba(247,239,220,.6); margin-top:4px; font-weight:400;}
+.menu-item .price-tag{border-color:var(--yellow); color:var(--yellow); white-space:nowrap; flex-shrink:0;}
+.menu-item .badges{display:inline-flex; gap:5px; margin-left:8px;}
+.badge-spicy{color:var(--rattan-deep); background:var(--yellow);}
+@media (max-width:760px){.menu-list{grid-template-columns:1fr;}}
+.order-banner{margin-top:40px; background:var(--yellow); color:var(--ink); border-radius:var(--radius); padding:26px 30px; display:flex; justify-content:space-between; align-items:center; gap:20px; flex-wrap:wrap;}
+.order-banner h3{font-size:1.3rem;}
+.order-banner p{font-size:.85rem; color:var(--ink-soft); margin-top:4px;}
+
+/* ---------- gallery ---------- */
+.gallery-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:16px;}
+.gal-card{border-radius:18px; aspect-ratio:1/1.1; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:16px; position:relative; overflow:hidden; transition:transform .3s ease;}
+.gal-card:hover{transform:translateY(-6px) scale(1.02);}
+.gal-card h4{font-family:var(--disp); color:var(--cream); font-size:1.05rem; z-index:2; position:absolute; left:16px; right:16px; bottom:16px; text-align:left;}
+.gal-card::before{content:""; position:absolute; inset:0; opacity:.9;}
+.gal-card::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg, transparent 35%, rgba(0,0,0,.6) 100%);}
+.gal-card span.ic{font-size:5rem; z-index:2; opacity:.95; filter:drop-shadow(0 8px 14px rgba(0,0,0,.25)); line-height:1;}
+@media (max-width:560px){.gal-card span.ic{font-size:3.6rem;}}
+.g1::before{background:var(--rattan);}
+.g2::before{background:var(--yellow-deep);}
+.g3::before{background:var(--sage);}
+.g4::before{background:var(--lavender-deep);}
+.g5::before{background:var(--ink-soft);}
+.g6::before{background:var(--yellow);}
+.g7::before{background:var(--rattan-deep);}
+.g8::before{background:#5b6b3d;}
+@media (max-width:900px){.gallery-grid{grid-template-columns:repeat(2,1fr);}}
+
+/* ---------- reviews ---------- */
+.reviews-top{display:grid; grid-template-columns:.7fr 1.3fr; gap:50px; align-items:center; margin-bottom:50px;}
+.rating-card{background:var(--paper); border:1px solid var(--line); border-radius:var(--radius); padding:30px; text-align:center; box-shadow:var(--shadow);}
+.rating-card .big{font-family:var(--disp); font-size:3.4rem; font-weight:800; color:var(--rattan-deep);}
+.rating-card .stars-row{color:var(--yellow-deep); font-size:1.4rem; letter-spacing:3px; margin:8px 0;}
+.rating-card small{color:var(--ink-soft); font-family:var(--mono); font-size:.75rem;}
+.bar-row{display:flex; align-items:center; gap:10px; margin-top:16px; text-align:left;}
+.bar-row .lbl{font-family:var(--mono); font-size:.75rem; width:14px;}
+.bar-track{flex:1; height:8px; background:var(--line); border-radius:100px; overflow:hidden;}
+.bar-fill{height:100%; background:var(--yellow-deep); border-radius:100px;}
+.review-track-wrap{overflow:hidden; position:relative;}
+.review-track{display:flex; gap:20px; transition:transform .5s ease;}
+.review-card{background:var(--paper); border:1px solid var(--line); border-radius:18px; padding:24px; min-width:290px; max-width:290px; flex-shrink:0; box-shadow:0 6px 16px rgba(67,18,29,.07);}
+.review-card .stars{color:var(--yellow-deep); font-size:.9rem; letter-spacing:2px;}
+.review-card p{margin-top:12px; font-size:.9rem; color:var(--ink-soft);}
+.review-card .who{margin-top:16px; display:flex; align-items:center; gap:10px;}
+.review-card .avatar{width:34px; height:34px; border-radius:50%; background:var(--rattan); color:var(--cream); display:flex; align-items:center; justify-content:center; font-family:var(--disp); font-weight:700; font-size:.85rem;}
+.review-card .who b{font-size:.85rem; display:block;}
+.review-card .who span{font-size:.72rem; color:var(--ink-soft);}
+.review-controls{display:flex; gap:12px; margin-top:24px; justify-content:flex-start; position:relative; z-index:10;}
+.review-controls button{width:42px; height:42px; border-radius:50%; border:2px solid var(--ink); background:var(--cream-2); font-size:1.1rem; transition:.2s;}
+.review-controls button:hover{background:var(--ink); color:var(--cream);}
+.review-dots{display:flex; gap:6px; align-items:center; margin-left:6px;}
+.review-dots span{width:7px; height:7px; border-radius:50%; background:var(--line); transition:.2s;}
+.review-dots span.active{background:var(--rattan); width:20px; border-radius:100px;}
+
+/* ---------- experiences ---------- */
+.exp-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:20px;}
+.exp-card{background:var(--paper); border-radius:var(--radius); padding:26px 22px; border:1px solid var(--line); text-align:left;}
+.exp-card .ic{font-size:1.8rem;}
+.exp-card h4{font-family:var(--disp); margin-top:14px; font-size:1.05rem;}
+.exp-card p{margin-top:8px; font-size:.85rem; color:var(--ink-soft);}
+@media (max-width:900px){.exp-grid{grid-template-columns:repeat(2,1fr);}}
+
+/* ---------- vouchers ---------- */
+.voucher-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(260px,1fr)); gap:24px; align-items:stretch;}
+.voucher{
+  position:relative; border-radius:20px; padding:26px; color:var(--cream);
+  background:repeating-linear-gradient(135deg, var(--rattan), var(--rattan) 14px, var(--rattan-deep) 14px, var(--rattan-deep) 28px);
+  overflow:hidden; min-height:180px; width:100%; display:flex; flex-direction:column; justify-content:space-between; box-sizing:border-box;
+}
+.voucher::before{content:""; position:absolute; inset:0; background:var(--rattan); opacity:.85;}
+.voucher > *{position:relative; z-index:1;}
+.voucher .code{font-family:var(--mono); background:rgba(255,255,255,.16); padding:6px 12px; border-radius:8px; display:inline-block; font-size:.85rem; letter-spacing:.06em; width:fit-content;}
+.voucher h4{font-family:var(--disp); font-size:1.3rem; margin:10px 0 4px;}
+.voucher p{font-size:.8rem; opacity:.9;}
+.voucher .cut{position:absolute; top:50%; left:-10px; width:20px; height:20px; background:var(--cream); border-radius:50%; transform:translateY(-50%); z-index:2;}
+.voucher .cut.r{left:auto; right:-10px;}
+
+/* ---------- forms / two-col sections ---------- */
+.split{display:grid; grid-template-columns:.9fr 1.1fr; gap:60px; align-items:flex-start;}
+@media (max-width:900px){.split{grid-template-columns:1fr; gap:36px;}}
+.info-list{margin-top:22px; display:flex; flex-direction:column; gap:18px;}
+.info-list .row{display:flex; gap:14px; align-items:flex-start;}
+.info-list .ic{width:40px; height:40px; border-radius:12px; background:var(--yellow); display:flex; align-items:center; justify-content:center; font-size:1.1rem; flex-shrink:0;}
+.info-list b{display:block; font-size:.95rem;}
+.info-list span{font-size:.85rem; color:var(--ink-soft);}
+.form-card{background:var(--paper); border:1px solid var(--line); border-radius:var(--radius); padding:34px; box-shadow:var(--shadow);}
+.field{margin-bottom:18px;}
+.field label{display:block; font-size:.8rem; font-weight:700; margin-bottom:7px; color:var(--ink-soft); text-transform:uppercase; letter-spacing:.05em;}
+.field input, .field select, .field textarea{
+  width:100%; padding:13px 15px; border-radius:12px; border:1.5px solid var(--line); background:var(--cream-2); color:var(--ink); transition:border .2s;
+}
+.field input:focus, .field select:focus, .field textarea:focus{outline:none; border-color:var(--rattan);}
+.field-row{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
+@media (max-width:560px){.field-row{grid-template-columns:1fr;}}
+.rules-box{background:var(--yellow); color:var(--ink); border-radius:16px; padding:18px 20px; margin-top:20px; font-size:.85rem;}
+.rules-box li{margin-top:6px; display:flex; gap:8px;}
+.rules-box li::before{content:"◆"; font-size:.6rem; margin-top:5px; color:var(--rattan-deep);}
+.slot-label{display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;}
+.slot-label span{font-size:.78rem; color:var(--ink-soft); font-weight:600;}
+.slot-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-bottom:18px;}
+.slot{
+  padding:9px 4px; text-align:center; border-radius:10px; border:1.5px solid var(--line);
+  font-family:var(--mono); font-size:.78rem; background:var(--cream-2); color:var(--ink);
+  position:relative; transition:.15s;
+}
+.slot:not(.slot-taken){cursor:pointer;}
+.slot:not(.slot-taken):hover{border-color:var(--rattan); background:#fff;}
+.slot.slot-taken{color:var(--ink-soft); opacity:.45; cursor:not-allowed; text-decoration:line-through; background:transparent;}
+.slot.slot-selected{background:var(--rattan); border-color:var(--rattan); color:var(--cream); font-weight:700;}
+.legend{display:flex; gap:16px; font-size:.72rem; color:var(--ink-soft); margin-bottom:16px;}
+.legend span{display:flex; align-items:center; gap:6px;}
+.legend i{width:12px; height:12px; border-radius:4px; display:inline-block; border:1.5px solid var(--line);}
+.legend i.taken{opacity:.45; background:var(--line);}
+.legend i.avail{background:var(--cream-2);}
+.legend i.sel{background:var(--rattan); border-color:var(--rattan);}
+.star-picker{display:flex; gap:8px; font-size:1.8rem; color:var(--line); margin-bottom:8px;}
+.star-picker span{cursor:pointer; transition:color .15s, transform .15s;}
+.star-picker span.active{color:var(--yellow-deep); transform:scale(1.12);}
+.form-msg{margin-top:16px; font-size:.85rem; font-weight:700; padding:12px 16px; border-radius:12px; display:none;}
+.form-msg.show{display:block;}
+.form-msg.ok{background:#E4EBD6; color:#40521f;}
+
+/* ---------- work with us ---------- */
+.job-list{margin-top:26px; display:flex; flex-direction:column; gap:14px;}
+.job{display:flex; justify-content:space-between; align-items:center; background:var(--paper); border:1px solid var(--line); border-radius:14px; padding:16px 20px; gap:12px; flex-wrap:wrap;}
+.job b{font-size:.95rem;}
+.job span{font-size:.78rem; color:var(--ink-soft); display:block; margin-top:2px;}
+
+/* ---------- amenities ---------- */
+.chip-groups{display:grid; grid-template-columns:repeat(3,1fr); gap:26px;}
+.chip-group h4{font-family:var(--disp); font-size:.95rem; margin-bottom:10px; color:var(--rattan-deep);}
+.chip{display:inline-block; background:var(--cream-2); border:1px solid var(--line); padding:6px 13px; border-radius:100px; font-size:.78rem; margin:0 6px 6px 0; color:var(--ink-soft);}
+@media (max-width:900px){.chip-groups{grid-template-columns:1fr 1fr;}}
+@media (max-width:560px){.chip-groups{grid-template-columns:1fr;}}
+
+/* ---------- find us ---------- */
+.map-frame{border-radius:var(--radius); overflow:hidden; border:1px solid var(--line); box-shadow:var(--shadow); height:400px;}
+.map-frame iframe{width:100%; height:100%; border:0;}
+
+/* ---------- footer ---------- */
+footer{background:var(--ink); color:var(--cream); padding:70px 0 26px;}
+.foot-grid{display:grid; grid-template-columns:1.3fr 1fr 1fr 1fr; gap:40px;}
+footer .logo{color:var(--yellow);}
+footer .logo span{color:rgba(247,239,220,.6);}
+footer p.about{margin-top:14px; font-size:.85rem; color:rgba(247,239,220,.65); max-width:280px;}
+footer h5{font-family:var(--disp); font-size:.9rem; margin-bottom:14px; color:var(--yellow);}
+footer ul li{margin-bottom:10px; font-size:.85rem; color:rgba(247,239,220,.75);}
+footer ul li a:hover{color:var(--yellow);}
+.social-row{display:flex; gap:10px; margin-top:16px;}
+.social-row a{width:38px; height:38px; border-radius:50%; border:1.5px solid rgba(247,239,220,.35); display:flex; align-items:center; justify-content:center; transition:.2s;}
+.social-row a:hover{background:var(--yellow); border-color:var(--yellow); color:var(--ink);}
+.foot-bottom{margin-top:50px; padding-top:24px; border-top:1px solid rgba(247,239,220,.15); display:flex; justify-content:space-between; font-size:.78rem; color:rgba(247,239,220,.55); flex-wrap:wrap; gap:10px;}
+@media (max-width:900px){.foot-grid{grid-template-columns:1fr 1fr; row-gap:34px;}}
+
+/* ---------- floating WA ---------- */
+.float-wa{position:fixed; bottom:24px; right:24px; z-index:200; background:#25D366; color:#fff; width:58px; height:58px; border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:0 10px 24px rgba(0,0,0,.3); font-size:1.6rem; transition:transform .2s;}
+.float-wa:hover{transform:scale(1.08);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#home" class="logo">TANAH AIR<span>RESTO &amp; CAFE · TVRI SENAYAN</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#whatsnew">What's New</a>
+      <a href="#experiences">Experiences</a>
+      <a href="#vouchers">Vouchers</a>
+      <a href="#reservations">Reservations</a>
+      <a href="#enquiry">Enquiry</a>
+      <a href="#feedback">Feedback</a>
+      <a href="#workwithus">Work With Us</a>
+      <a href="#findus">Find Us</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#reservations" class="btn btn-ghost" style="padding:10px 20px; font-size:.85rem;">Reservasi</a>
+      <a href="https://wa.me/62816800161?text=Halo%20Tanah%20Air%2C%20saya%20ingin%20order%20makanan%20%F0%9F%98%8A" target="_blank" rel="noopener" class="btn btn-primary" style="padding:10px 20px; font-size:.85rem;">Order Here</a>
+      <button class="burger" id="burgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- HOME / HERO -->
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div class="reveal in">
+      <span class="eyebrow">Kompleks TVRI Senayan · Jakarta Pusat</span>
+      <h1>Rasa Nusantara,<br><em>Rupa</em> Kekinian.</h1>
+      <p class="lead">Masakan rumahan Indonesia yang dikemas ulang secara estetik — dari bakwan jagung, rendang, sampai kopi martabak. Nyaman untuk kerja, kumpul, atau sekadar ngopi sore di tengah kawasan GBK Senayan.</p>
+      <div class="hero-actions">
+        <a href="https://wa.me/62816800161?text=Halo%20Tanah%20Air%2C%20saya%20ingin%20order%20makanan" target="_blank" rel="noopener" class="btn btn-primary">🛵 Order Here</a>
+        <a href="#reservations" class="btn btn-ghost">📅 Reservasi Meja</a>
+      </div>
+      <div class="hero-meta">
+        <div class="item"><span class="dot"></span>Buka Setiap Hari, 08.00–21.00 WIB</div>
+        <div class="item"><span class="dot"></span>Indoor &amp; Outdoor Seating</div>
+        <div class="item"><span class="dot"></span>Parkir Luas &amp; Gratis</div>
+      </div>
+    </div>
+    <div class="hero-art reveal in">
+      <div class="card-float card-1"><h4>🌽 Bakwan Jagung</h4><p>Puff pastry, isi jagung bakar &amp; keju — favorit tamu.</p></div>
+      <div class="card-float card-3"><h4>☕ Kopi Martabak</h4><p>Salted caramel, peanut butter, cream cheese rumahan.</p></div>
+      <div class="card-float card-2"><h4>🍛 Rendang Bitterballen</h4><p>Renyah di luar, gurih rendang di dalam.</p></div>
+      <div class="rating-badge">
+        <div class="num">4,9</div>
+        <div>
+          <div class="stars">★★★★★</div>
+          <small>dari 112 ulasan Google</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Rendang Bitterballen</span><span>Kopi Martabak</span><span>Laksa Laut</span><span>Es Naskun</span><span>Sate Maranggi</span><span>Ramen Chicken Katsu</span><span>Pesmol Salmon</span><span>Bakwan Jagung</span>
+    <span>Rendang Bitterballen</span><span>Kopi Martabak</span><span>Laksa Laut</span><span>Es Naskun</span><span>Sate Maranggi</span><span>Ramen Chicken Katsu</span><span>Pesmol Salmon</span><span>Bakwan Jagung</span>
+  </div>
+</div>
+
+<!-- WHAT'S NEW -->
+<section id="whatsnew">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">What's New</span>
+      <h2>Info &amp; promo terbaru</h2>
+      <p>Yang lagi seru di Tanah Air minggu ini — pantau terus, biar nggak ketinggalan.</p>
+    </div>
+    <div class="new-grid">
+      <div class="new-card reveal">
+        <span class="tag">Event</span>
+        <h3>Nobar Pertandingan Besar 🇦🇷🇪🇸</h3>
+        <p>Nonton bareng bikin suasana makin meriah — sambil ngopi es kopi nanas &amp; kopi talua andalan. Cek jadwal nobar berikutnya di Instagram kami.</p>
+      </div>
+      <div class="new-card reveal">
+        <span class="tag">Menu Baru</span>
+        <h3>Es Naskun (Nanas Kunyit)</h3>
+        <p>Perpaduan nanas dan kunyit yang segar — jadi salah satu menu paling dicari tamu belakangan ini. Cocok buat cuaca Jakarta yang panas.</p>
+      </div>
+      <div class="new-card reveal">
+        <span class="tag">Weekend</span>
+        <h3>Sarapan Cantik Abis CFD</h3>
+        <p>Buka dari jam 08.00 — jadi tempat pas buat sarapan santai setelah Car Free Day di area Senayan, sebelum makin ramai siang harinya.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="menu-section" id="menu">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Menu</span>
+      <h2>Menu pilihan kami</h2>
+      <p>Diambil langsung dari menu meja Tanah Air. Harga dalam ribuan rupiah, belum termasuk biaya layanan 5% &amp; pajak 10%.</p>
+    </div>
+
+    <div class="tabs" id="menuTabs">
+      <button class="tab-btn active" data-tab="mealset">Meal Sets</button>
+      <button class="tab-btn" data-tab="starters">Starters</button>
+      <button class="tab-btn" data-tab="mains">Mains</button>
+      <button class="tab-btn" data-tab="ramen">Ramen &amp; Rice Bowl</button>
+      <button class="tab-btn" data-tab="sweet">Sweet Treats</button>
+      <button class="tab-btn" data-tab="coffee">Coffee &amp; Signature</button>
+      <button class="tab-btn" data-tab="tea">Tea, Fruit &amp; Rasa Lokal</button>
+    </div>
+
+    <div class="menu-panel active" data-panel="mealset">
+      <p class="menu-note">Setiap meal set termasuk pilihan nasi (putih/gurih) &amp; sambal (baby cumi / terasi / oncom)</p>
+      <div class="menu-list">
+        <div class="menu-item"><div><div class="mi-name">Ayam Ungkep</div><div class="mi-desc">Set ayam ungkep, kering tempe &amp; nasi uduk panggang.</div></div><span class="price-tag">59</span></div>
+        <div class="menu-item"><div><div class="mi-name">Iga Bakar 🌶️</div><div class="mi-desc">Set iga dengan acar, kering tempe, krecek &amp; bumbu iga bakar.</div></div><span class="price-tag">89</span></div>
+        <div class="menu-item"><div><div class="mi-name">Sate Maranggi</div><div class="mi-desc">Set sate maranggi, sambal nanas, kering tempe &amp; krecek. Per 1 tusuk: 21.</div></div><span class="price-tag">75</span></div>
+        <div class="menu-item"><div><div class="mi-name">Rendang</div><div class="mi-desc">Set rendang sapi dengan kering tempe &amp; krecek.</div></div><span class="price-tag">61</span></div>
+        <div class="menu-item"><div><div class="mi-name">Ayam Betutu 🌶️</div><div class="mi-desc">Ayam Bali tradisional, sambal matah &amp; kering tempe.</div></div><span class="price-tag">65</span></div>
+      </div>
+    </div>
+
+    <div class="menu-panel" data-panel="starters">
+      <p class="menu-note">Cocok untuk berbagi berdua atau bertiga</p>
+      <div class="menu-list">
+        <div class="menu-item"><div><div class="mi-name">Bakwan Jagung</div><div class="mi-desc">Puff pastry berisi krim jagung, keju &amp; jagung bakar, disajikan dengan chili confit.</div></div><span class="price-tag">35</span></div>
+        <div class="menu-item"><div><div class="mi-name">Oli Angela Bitterballen</div><div class="mi-desc">Bitterballen isi olive tapenade, disajikan dengan mayo bawang.</div></div><span class="price-tag">25</span></div>
+        <div class="menu-item"><div><div class="mi-name">Rendang Bitterballen 🌶️</div><div class="mi-desc">Bitterballen isi rendang sapi, disajikan di atas saus pandan &amp; sambal harmomeli.</div></div><span class="price-tag">38</span></div>
+        <div class="menu-item"><div><div class="mi-name">Sate Lilit Bunga Kohlrabi</div><div class="mi-desc">Sate lilit ayam dengan sayuran edible flower untuk rasa &amp; aroma yang unik.</div></div><span class="price-tag">45</span></div>
+        <div class="menu-item"><div><div class="mi-name">Beef Rendang Nachos 🌶️</div><div class="mi-desc">Nachos, kulit pangsit &amp; acar, disajikan dengan topping rendang sapi, saus keju &amp; garlic bakar mayo.</div></div><span class="price-tag">43 / 78</span></div>
+        <div class="menu-item"><div><div class="mi-name">Crispy Achar Roll 🌶️</div><div class="mi-desc">Sambal roa dengan pastry crispy, disajikan dengan puff pastry acar.</div></div><span class="price-tag">26</span></div>
+        <div class="menu-item"><div><div class="mi-name">Gado-Gado Kacang Mede</div><div class="mi-desc">Ketoprak dalam rice paper dengan sayur segar &amp; tahu, saus ketoprak khas Tanah Air &amp; saus sambal.</div></div><span class="price-tag">57</span></div>
+        <div class="menu-item"><div><div class="mi-name">Kentang Goreng Tanah Air</div><div class="mi-desc">Kentang goreng disajikan dengan cincang saus rendang &amp; mozzarella.</div></div><span class="price-tag">49</span></div>
+        <div class="menu-item"><div><div class="mi-name">Rujak Gula Nusantara</div><div class="mi-desc">Pilihan udang / tahu, dengan saus gula merah khas.</div></div><span class="price-tag">55 / 45</span></div>
+      </div>
+    </div>
+
+    <div class="menu-panel" data-panel="mains">
+      <div class="menu-list">
+        <div class="menu-item"><div><div class="mi-name">Mie Ayam 🌶️</div><div class="mi-desc">Original / pedas — mie ayam dengan pangsit goreng.</div></div><span class="price-tag">40</span></div>
+        <div class="menu-item"><div><div class="mi-name">Laksa Laut</div><div class="mi-desc">Laksa berkuah kaldu udang dimasak selama 4 jam, disajikan dengan udang tiger, cumi, telur puyuh &amp; bihun.</div></div><span class="price-tag">85</span></div>
+        <div class="menu-item"><div><div class="mi-name">Nasi Bakar Tanah Air</div><div class="mi-desc">Nasi bakar khas Tanah Air, disajikan dengan telur asin.</div></div><span class="price-tag">66</span></div>
+        <div class="menu-item"><div><div class="mi-name">Sushi Beef Rendang / Sambal Roa 🌶️</div><div class="mi-desc">Sushi isi beef rendang, disajikan dengan saus khas Tanah Air.</div></div><span class="price-tag">65</span></div>
+        <div class="menu-item"><div><div class="mi-name">Kwetiau Goreng Ayam / Seafood</div><div class="mi-desc">Kwetiau goreng khas Tanah Air dengan telur mata sapi.</div></div><span class="price-tag">35 / 55</span></div>
+        <div class="menu-item"><div><div class="mi-name">Nasi Goreng Ayam / Seafood</div><div class="mi-desc">Nasi goreng disajikan dengan ayam atau seafood &amp; telur mata sapi.</div></div><span class="price-tag">40 / 60</span></div>
+        <div class="menu-item"><div><div class="mi-name">Burger Rendang</div><div class="mi-desc">Burger berisikan patty rendang sapi, telur, selada &amp; saus rendang khas Tanah Air.</div></div><span class="price-tag">69</span></div>
+        <div class="menu-item"><div><div class="mi-name">Pesmol Salmon 🌶️</div><div class="mi-desc">Salmon dengan saus pesmol khas Tanah Air, termasuk nasi putih &amp; sambal terpisah.</div></div><span class="price-tag">95</span></div>
+        <div class="menu-item"><div><div class="mi-name">Cheese Omelette</div><div class="mi-desc">Telur dadar keju disajikan dengan tomat panggang.</div></div><span class="price-tag">38</span></div>
+        <div class="menu-item"><div><div class="mi-name">Sop Iga</div><div class="mi-desc">Iga dimasak selama 5 jam, disajikan dengan kentang &amp; wortel.</div></div><span class="price-tag">89</span></div>
+        <div class="menu-item"><div><div class="mi-name">Bubur Kacang Hijau / Ketan Hitam</div><div class="mi-desc">Disajikan dengan krim santan.</div></div><span class="price-tag">27</span></div>
+      </div>
+    </div>
+
+    <div class="menu-panel" data-panel="ramen">
+      <div class="menu-list">
+        <div class="menu-item"><div><div class="mi-name">Ramen Chicken Katsu</div><div class="mi-desc">Tantan / kari — gurih pedas kuah tantanmen dengan ayam katsu renyah.</div></div><span class="price-tag">43</span></div>
+        <div class="menu-item"><div><div class="mi-name">Ramen Chicken Karage</div><div class="mi-desc">Tantan / kari — kuah kaldu miso dengan ayam karage renyah.</div></div><span class="price-tag">43</span></div>
+        <div class="menu-item"><div><div class="mi-name">Rice Bowl Chicken Karage</div><div class="mi-desc">Original / kari.</div></div><span class="price-tag">41</span></div>
+        <div class="menu-item"><div><div class="mi-name">Rice Bowl Chicken Katsu</div><div class="mi-desc">Original / kari.</div></div><span class="price-tag">41</span></div>
+      </div>
+    </div>
+
+    <div class="menu-panel" data-panel="sweet">
+      <div class="menu-list">
+        <div class="menu-item"><div><div class="mi-name">Pisang Goreng Walnut</div><div class="mi-desc">Dengan salted caramel sauce khas Tanah Air, disajikan dengan es krim vanilla.</div></div><span class="price-tag">39</span></div>
+        <div class="menu-item"><div><div class="mi-name">Cheesecake Cup</div><div class="mi-desc">Cheesecake creamy dengan varian rasa pilihan, disajikan dalam cup.</div></div><span class="price-tag">26</span></div>
+        <div class="menu-item"><div><div class="mi-name">Specialty Croissants</div><div class="mi-desc">Pineapple crumble croissant / choco hazelnut croissant.</div></div><span class="price-tag">36</span></div>
+        <div class="menu-item"><div><div class="mi-name">Panna Cotta Matcha</div><div class="mi-desc">Panna cotta matcha, disiram base &amp; glaze matcha.</div></div><span class="price-tag">33</span></div>
+        <div class="menu-item"><div><div class="mi-name">Panna Cotta Vanilla</div><div class="mi-desc">Panna cotta vanilla lembut dengan remah biskuit.</div></div><span class="price-tag">27</span></div>
+        <div class="menu-item"><div><div class="mi-name">Es Cendol</div><div class="mi-desc">Cendol khas Asia Tenggara, santan, gula merah cair &amp; es serut.</div></div><span class="price-tag">39</span></div>
+        <div class="menu-item"><div><div class="mi-name">Es Campur</div><div class="mi-desc">Campuran topping manis khas Indonesia, sirup &amp; susu kental manis.</div></div><span class="price-tag">39</span></div>
+      </div>
+    </div>
+
+    <div class="menu-panel" data-panel="coffee">
+      <div class="menu-list">
+        <div class="menu-item"><div><div class="mi-name">Americano</div><div class="mi-desc">Hot / iced.</div></div><span class="price-tag">30 / 32</span></div>
+        <div class="menu-item"><div><div class="mi-name">Cappuccino</div><div class="mi-desc">Hot / iced.</div></div><span class="price-tag">35 / 38</span></div>
+        <div class="menu-item"><div><div class="mi-name">Latte</div><div class="mi-desc">Hot / iced.</div></div><span class="price-tag">35 / 38</span></div>
+        <div class="menu-item"><div><div class="mi-name">Flat White</div></div><span class="price-tag">35</span></div>
+        <div class="menu-item"><div><div class="mi-name">Piccolo</div></div><span class="price-tag">28</span></div>
+        <div class="menu-item"><div><div class="mi-name">Espresso</div></div><span class="price-tag">23</span></div>
+        <div class="menu-item"><div><div class="mi-name">Manual Brew</div><div class="mi-desc">V60 / Japanese.</div></div><span class="price-tag">40</span></div>
+        <div class="menu-item"><div><div class="mi-name">Kopi Tanah Air</div><div class="mi-desc">Espresso dengan susu, ditambahkan gula aren.</div></div><span class="price-tag">35</span></div>
+        <div class="menu-item"><div><div class="mi-name">Martabak Coffee ★</div><div class="mi-desc">Terinspirasi dari rasa martabak — salted caramel, homemade peanut butter, kacang, susu &amp; cream cheese.</div></div><span class="price-tag">39</span></div>
+        <div class="menu-item"><div><div class="mi-name">Jasuke Coffee ★</div><div class="mi-desc">Espresso dengan cream cheese, jagung serut &amp; keju parut.</div></div><span class="price-tag">39</span></div>
+        <div class="menu-item"><div><div class="mi-name">Chokopi</div><div class="mi-desc">Americano / latte dengan saus homemade mocha khas Tanah Air.</div></div><span class="price-tag">38</span></div>
+        <div class="menu-item"><div><div class="mi-name">Es Coffee Nanas</div><div class="mi-desc">Segar dan nikmat khas Tanah Air.</div></div><span class="price-tag">36</span></div>
+      </div>
+    </div>
+
+    <div class="menu-panel" data-panel="tea">
+      <div class="menu-list">
+        <div class="menu-item"><div><div class="mi-name">Matcha Latte</div><div class="mi-desc">Hot / iced.</div></div><span class="price-tag">38</span></div>
+        <div class="menu-item"><div><div class="mi-name">Es Kopi Matcha</div></div><span class="price-tag">38</span></div>
+        <div class="menu-item"><div><div class="mi-name">Matcha Lychee Yakult</div></div><span class="price-tag">35</span></div>
+        <div class="menu-item"><div><div class="mi-name">Matcha Almond</div></div><span class="price-tag">38</span></div>
+        <div class="menu-item"><div><div class="mi-name">Hot Chocolate</div></div><span class="price-tag">35</span></div>
+        <div class="menu-item"><div><div class="mi-name">Chamomile / Earl Grey / English Breakfast / Jasmine / Peppermint / Sencha / Vanilla Bourbon</div><div class="mi-desc">Artisan tea pilihan.</div></div><span class="price-tag">35</span></div>
+        <div class="menu-item"><div><div class="mi-name">Es Semangka Gembira</div></div><span class="price-tag">35</span></div>
+        <div class="menu-item"><div><div class="mi-name">Es Naskun (Nanas Kunyit)</div></div><span class="price-tag">35</span></div>
+        <div class="menu-item"><div><div class="mi-name">Mangdu (Mangga Madu)</div></div><span class="price-tag">35</span></div>
+        <div class="menu-item"><div><div class="mi-name">Es Rosella Lengkeng</div></div><span class="price-tag">33</span></div>
+        <div class="menu-item"><div><div class="mi-name">Sparkling Jahe</div></div><span class="price-tag">33</span></div>
+        <div class="menu-item"><div><div class="mi-name">Es Markisa</div></div><span class="price-tag">33</span></div>
+        <div class="menu-item"><div><div class="mi-name">Es Teh Manis / Teh Panas</div></div><span class="price-tag">20 / 16</span></div>
+        <div class="menu-item"><div><div class="mi-name">Air Mineral</div><div class="mi-desc">Hot / iced.</div></div><span class="price-tag">10</span></div>
+      </div>
+    </div>
+
+    <div class="order-banner reveal">
+      <div>
+        <h3>Mau makan tapi lagi males keluar?</h3>
+        <p>Pesan antar / bawa pulang tersedia via WhatsApp — tinggal chat, kami siapkan.</p>
+      </div>
+      <a href="https://wa.me/62816800161?text=Halo%20Tanah%20Air%2C%20saya%20ingin%20order%20makanan" target="_blank" rel="noopener" class="btn" style="background:var(--ink); color:var(--yellow);">Order Here →</a>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Suasana &amp; Sajian</span>
+      <h2>Sepintas dari Tanah Air</h2>
+      <p>Warna-warni sajian dan suasana kami — dari yang gurih sampai yang manis.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gal-card g1 reveal"><span class="ic">🌽</span><h4>Bakwan Jagung</h4></div>
+      <div class="gal-card g2 reveal"><span class="ic">☕</span><h4>Kopi Martabak</h4></div>
+      <div class="gal-card g3 reveal"><span class="ic">🍜</span><h4>Laksa Laut</h4></div>
+      <div class="gal-card g4 reveal"><span class="ic">🍹</span><h4>Es Naskun</h4></div>
+      <div class="gal-card g5 reveal"><span class="ic">🥩</span><h4>Sate Maranggi</h4></div>
+      <div class="gal-card g6 reveal"><span class="ic">🍢</span><h4>Rendang Bitterballen</h4></div>
+      <div class="gal-card g7 reveal"><span class="ic">🐟</span><h4>Pesmol Salmon</h4></div>
+      <div class="gal-card g8 reveal"><span class="ic">🍮</span><h4>Panna Cotta Matcha</h4></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCES -->
+<section id="experiences" style="background:var(--cream-2);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Experiences</span>
+      <h2>Lebih dari sekadar makan</h2>
+      <p>Ruang yang fleksibel — untuk kerja, kumpul, sampai acara nonton bareng.</p>
+    </div>
+    <div class="exp-grid">
+      <div class="exp-card reveal"><span class="ic">💻</span><h4>Work From Cafe</h4><p>Suasana nyaman &amp; tenang, cocok untuk beres-beres kerjaan sambil menikmati kopi.</p></div>
+      <div class="exp-card reveal"><span class="ic">📺</span><h4>Nonton Bareng</h4><p>Layar besar &amp; suasana seru untuk nobar pertandingan besar — hubungi kami untuk jadwal.</p></div>
+      <div class="exp-card reveal"><span class="ic">🎉</span><h4>Arisan &amp; Private Event</h4><p>Ruang cukup luas untuk arisan atau acara kumpul keluarga — reservasi dulu di weekend.</p></div>
+      <div class="exp-card reveal"><span class="ic">👨‍👩‍👧</span><h4>Family Friendly</h4><p>Ramah anak, ada indoor &amp; outdoor seating dengan area khusus merokok di luar.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- VOUCHERS -->
+<section id="vouchers">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Vouchers</span>
+      <h2>Promo untuk kamu</h2>
+      <p>Contoh voucher yang bisa diaktifkan — tunjukkan halaman ini ke kasir atau sebutkan kodenya saat memesan.</p>
+    </div>
+    <div class="voucher-grid">
+      <div class="voucher reveal"><div class="cut"></div><div class="cut r"></div>
+        <span class="code">TANAHAIRBARU</span>
+        <div><h4>Diskon 10%</h4><p>Untuk pelanggan baru, min. transaksi Rp100rb. Berlaku dine-in.</p></div>
+      </div>
+      <div class="voucher reveal"><div class="cut"></div><div class="cut r"></div>
+        <span class="code">NGOPISENIN</span>
+        <div><h4>Beli 1 Gratis 1</h4>
+        <p>Kopi signature, khusus hari Senin pukul 08.00–11.00.</p></div>
+      </div>
+      <div class="voucher reveal"><div class="cut"></div><div class="cut r"></div>
+        <span class="code">GRUP6PLUS</span>
+        <div><h4>Free Sweet Treat</h4><p>Untuk reservasi kelompok 6 orang atau lebih. Syarat &amp; ketentuan berlaku.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" style="background:var(--cream-2);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Reviews</span>
+      <h2>Kata mereka yang sudah mampir</h2>
+    </div>
+    <div class="reviews-top">
+      <div class="rating-card reveal">
+        <div class="big">4,9</div>
+        <div class="stars-row">★★★★★</div>
+        <small>Berdasarkan 112 ulasan Google</small>
+        <div class="bar-row"><span class="lbl">5</span><div class="bar-track"><div class="bar-fill" style="width:97%"></div></div></div>
+        <div class="bar-row"><span class="lbl">4</span><div class="bar-track"><div class="bar-fill" style="width:6%"></div></div></div>
+        <div class="bar-row"><span class="lbl">3</span><div class="bar-track"><div class="bar-fill" style="width:2%"></div></div></div>
+        <div class="bar-row"><span class="lbl">2</span><div class="bar-track"><div class="bar-fill" style="width:1%"></div></div></div>
+        <div class="bar-row"><span class="lbl">1</span><div class="bar-track"><div class="bar-fill" style="width:1%"></div></div></div>
+      </div>
+      <div class="reveal">
+        <div class="review-track-wrap">
+          <div class="review-track" id="reviewTrack">
+            <div class="review-card"><div class="stars">★★★★★</div><p>"Playful menu and decoration, and every single dish is well thought out. My personal favs are bakwan jagung, mie ayam, and es matcha jeruk."</p><div class="who"><div class="avatar">A</div><div><b>Adinda Anjani</b><span>7 bulan lalu</span></div></div></div>
+            <div class="review-card"><div class="stars">★★★★★</div><p>"Restaurant pas buat makan atau nongkrong setelah olahraga di GBK. Menu beragam dan unik, harganya pas dan parkiran luas."</p><div class="who"><div class="avatar">Z</div><div><b>Z N</b><span>setahun lalu</span></div></div></div>
+            <div class="review-card"><div class="stars">★★★★★</div><p>"Tempatnyaa modern & super estetik, bersih & cozy. Walau modern, makanan tetap khas nusantara dikemas beda — ada bubur kuning & bakwan jagung kekinian."</p><div class="who"><div class="avatar">K</div><div><b>Kuliner by Aya</b><span>10 bulan lalu</span></div></div></div>
+            <div class="review-card"><div class="stars">★★★★★</div><p>"Makanannya enak, mantap, dan terasa sehat karena hampir tidak ada rasa mecin di tiap menu yang saya order."</p><div class="who"><div class="avatar">I</div><div><b>Indriyani Emilia</b><span>10 bulan lalu</span></div></div></div>
+            <div class="review-card"><div class="stars">★★★★★</div><p>"Rendangnya dagingnya empuk, porsi lumayan, bumbu sedikit pedas. Cappuccino susu almond-nya enak juga. Cocok buat lunch atau work from cafe."</p><div class="who"><div class="avatar">K</div><div><b>Kezia Yuliana</b><span>10 bulan lalu</span></div></div></div>
+            <div class="review-card"><div class="stars">★★★★★</div><p>"Kaget di TVRI ada tempat makan seenak ini. Kopi martabak dan kopi jasuke-nya best, gurih asinnya nyatu sama cream cheese-nya."</p><div class="who"><div class="avatar">V</div><div><b>Vivi Octavianda</b><span>setahun lalu</span></div></div></div>
+            <div class="review-card"><div class="stars">★★★★★</div><p>"Nyaman dan tenang, enak buat beres kerjaan sekalian nyemil. Coba es naskun (nanas kunyit), segerr!"</p><div class="who"><div class="avatar">D</div><div><b>David Widianto</b><span>6 bulan lalu</span></div></div></div>
+            <div class="review-card"><div class="stars">★★★★★</div><p>"Nobar Final Piala Dunia di sini bikin seru — ambient-nya nambah suasana malam jadi meriah, sambil ngupi es kopi nanas & kopi talua."</p><div class="who"><div class="avatar">P</div><div><b>Ptselangis</b><span>2 minggu lalu</span></div></div></div>
+          </div>
+        </div>
+        <div class="review-controls">
+          <button id="revPrev" aria-label="Sebelumnya">←</button>
+          <button id="revNext" aria-label="Berikutnya">→</button>
+          <div class="review-dots" id="revDots"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESERVATIONS -->
+<section id="reservations">
+  <div class="wrap split">
+    <div class="reveal">
+      <span class="eyebrow">Reservations</span>
+      <h2 style="margin-top:10px; font-size:clamp(1.8rem,4vw,2.4rem);">Reservasi meja</h2>
+      <p style="margin-top:12px; color:var(--ink-soft);">Isi formulir di samping, lalu kirim langsung ke WhatsApp kami untuk konfirmasi.</p>
+      <div class="rules-box">
+        <ul>
+          <li>Meja akan ditahan selama <b>15 menit</b> sejak jam reservasi, dengan seluruh tamu hadir.</li>
+          <li>Slot weekend / hari libur tersedia tapi <b>terbatas</b> — booking lebih awal disarankan.</li>
+          <li>Walk-in tetap dianjurkan saat weekend jika belum sempat reservasi.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="form-card reveal">
+      <form id="resForm">
+        <div class="field-row">
+          <div class="field"><label>Nama</label><input type="text" required placeholder="Nama lengkap"></div>
+          <div class="field"><label>No. WhatsApp</label><input type="tel" required placeholder="08xx xxxx xxxx"></div>
+        </div>
+        <div class="field-row">
+          <div class="field"><label>Tanggal</label><input type="date" id="resDate" required></div>
+          <div class="field"><label>Jumlah Tamu</label><input type="number" min="1" max="30" value="2" required></div>
+        </div>
+        <div class="field">
+          <div class="slot-label"><label style="margin:0;">Pilih Jam</label><span id="slotSelectedTxt">Belum dipilih</span></div>
+          <div class="legend">
+            <span><i class="avail"></i>Tersedia</span>
+            <span><i class="taken"></i>Sudah dibooking</span>
+            <span><i class="sel"></i>Dipilih</span>
+          </div>
+          <div class="slot-grid" id="slotGrid"></div>
+          <input type="hidden" id="resTime" required>
+        </div>
+        <div class="field"><label>Area</label><select><option>Indoor</option><option>Outdoor</option><option>Tidak ada preferensi</option></select></div>
+        <div class="field"><label>Catatan (opsional)</label><textarea rows="3" placeholder="Contoh: arisan, ulang tahun, kursi bayi, dsb."></textarea></div>
+        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Kirim Reservasi via WhatsApp</button>
+        <div class="form-msg ok" id="resMsg">Terima kasih! WhatsApp akan terbuka dengan detail reservasi kamu.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ENQUIRY -->
+<section id="enquiry" style="background:var(--cream-2);">
+  <div class="wrap split">
+    <div class="reveal">
+      <span class="eyebrow">Enquiry</span>
+      <h2 style="margin-top:10px; font-size:clamp(1.8rem,4vw,2.4rem);">Ada pertanyaan?</h2>
+      <p style="margin-top:12px; color:var(--ink-soft);">Untuk pertanyaan menu, event privat, kerja sama, atau lainnya — kirim lewat form ini atau langsung chat kami.</p>
+      <div class="info-list">
+        <div class="row"><div class="ic">📍</div><div><b>Alamat</b><span>TVRI Senayan Jakarta, Jl. Gerbang Pemuda, RT.1/RW.3, Gelora, Kec. Tanah Abang, Jakarta Pusat 10270</span></div></div>
+        <div class="row"><div class="ic">📞</div><div><b>Telepon / WhatsApp</b><span><a href="tel:+62816800161">0816-800-161</a></span></div></div>
+        <div class="row"><div class="ic">🕒</div><div><b>Jam Operasional</b><span>Setiap hari, 08.00–21.00 WIB</span></div></div>
+      </div>
+    </div>
+    <div class="form-card reveal">
+      <form id="enqForm">
+        <div class="field-row">
+          <div class="field"><label>Nama</label><input type="text" required placeholder="Nama kamu"></div>
+          <div class="field"><label>No. WhatsApp / Email</label><input type="text" required placeholder="Kontak yang bisa dihubungi"></div>
+        </div>
+        <div class="field"><label>Subjek</label><input type="text" placeholder="Contoh: Event privat, kerja sama, dsb."></div>
+        <div class="field"><label>Pesan</label><textarea rows="4" required placeholder="Tulis pertanyaanmu di sini..."></textarea></div>
+        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Kirim Pertanyaan</button>
+        <div class="form-msg ok" id="enqMsg">Terima kasih! Pertanyaanmu akan kami teruskan via WhatsApp.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FEEDBACK -->
+<section id="feedback">
+  <div class="wrap split">
+    <div class="reveal">
+      <span class="eyebrow">Feedback</span>
+      <h2 style="margin-top:10px; font-size:clamp(1.8rem,4vw,2.4rem);">Ceritakan pengalamanmu</h2>
+      <p style="margin-top:12px; color:var(--ink-soft);">Masukan kamu bantu kami terus lebih baik — soal rasa, pelayanan, atau suasana tempat.</p>
+      <div class="info-list">
+        <div class="row"><div class="ic">⭐</div><div><b>Rating rata-rata</b><span>4,9 dari 112 ulasan Google — makasih atas kepercayaannya!</span></div></div>
+        <div class="row"><div class="ic">💬</div><div><b>Kritik & saran langsung</b><span>Bisa juga kirim lewat DM Instagram @tanahairjakarta.</span></div></div>
+      </div>
+    </div>
+    <div class="form-card reveal">
+      <form id="fbForm">
+        <div class="field">
+          <label>Rating kamu</label>
+          <div class="star-picker" id="starPicker">
+            <span data-v="1">★</span><span data-v="2">★</span><span data-v="3">★</span><span data-v="4">★</span><span data-v="5">★</span>
+          </div>
+        </div>
+        <div class="field"><label>Nama (opsional)</label><input type="text" placeholder="Nama kamu"></div>
+        <div class="field"><label>Masukan kamu</label><textarea rows="4" required placeholder="Ceritakan pengalaman makan/minum kamu di Tanah Air..."></textarea></div>
+        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Kirim Feedback</button>
+        <div class="form-msg ok" id="fbMsg">Terima kasih atas masukannya! 🙏</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- WORK WITH US -->
+<section id="workwithus" style="background:var(--cream-2);">
+  <div class="wrap split">
+    <div class="reveal">
+      <span class="eyebrow">Work With Us</span>
+      <h2 style="margin-top:10px; font-size:clamp(1.8rem,4vw,2.4rem);">Fancy working with us?</h2>
+      <p style="margin-top:12px; color:var(--ink-soft);">Kami selalu terbuka untuk orang-orang yang senang kerja tim, ramah, dan suka dunia kuliner. Kirim lamaranmu lewat WhatsApp atau DM Instagram kami.</p>
+      <div class="job-list">
+        <div class="job reveal"><div><b>Barista</b><span>Full-time · Onsite TVRI Senayan</span></div><a href="https://wa.me/62816800161?text=Halo%2C%20saya%20tertarik%20melamar%20sebagai%20Barista%20di%20Tanah%20Air" target="_blank" rel="noopener" class="btn btn-yellow" style="padding:9px 18px; font-size:.82rem;">Lamar</a></div>
+        <div class="job reveal"><div><b>Server / Waiter</b><span>Full-time · Onsite TVRI Senayan</span></div><a href="https://wa.me/62816800161?text=Halo%2C%20saya%20tertarik%20melamar%20sebagai%20Server%20di%20Tanah%20Air" target="_blank" rel="noopener" class="btn btn-yellow" style="padding:9px 18px; font-size:.82rem;">Lamar</a></div>
+        <div class="job reveal"><div><b>Kitchen Crew</b><span>Full-time · Onsite TVRI Senayan</span></div><a href="https://wa.me/62816800161?text=Halo%2C%20saya%20tertarik%20melamar%20sebagai%20Kitchen%20Crew%20di%20Tanah%20Air" target="_blank" rel="noopener" class="btn btn-yellow" style="padding:9px 18px; font-size:.82rem;">Lamar</a></div>
+      </div>
+    </div>
+    <div class="form-card reveal">
+      <form id="jobForm">
+        <div class="field-row">
+          <div class="field"><label>Nama</label><input type="text" required placeholder="Nama lengkap"></div>
+          <div class="field"><label>No. WhatsApp</label><input type="tel" required placeholder="08xx xxxx xxxx"></div>
+        </div>
+        <div class="field"><label>Posisi yang diminati</label>
+          <select><option>Barista</option><option>Server / Waiter</option><option>Kitchen Crew</option><option>Lainnya</option></select>
+        </div>
+        <div class="field"><label>Ceritakan pengalamanmu</label><textarea rows="4" placeholder="Pengalaman kerja, ketersediaan waktu, dll."></textarea></div>
+        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Kirim Lamaran via WhatsApp</button>
+        <div class="form-msg ok" id="jobMsg">Terima kasih! WhatsApp akan terbuka dengan detail lamaranmu.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- INFO & FASILITAS -->
+<section id="info">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Info &amp; Fasilitas</span>
+      <h2>Yang perlu kamu tahu</h2>
+    </div>
+    <div class="chip-groups">
+      <div class="chip-group reveal"><h4>Opsi Layanan</h4><span class="chip">Pesan antar</span><span class="chip">Bawa pulang</span><span class="chip">Makan di tempat</span></div>
+      <div class="chip-group reveal"><h4>Keunggulan</h4><span class="chip">Kopi enak</span><span class="chip">Makanan pencuci mulut enak</span><span class="chip">Pilihan teh enak</span></div>
+      <div class="chip-group reveal"><h4>Populer Untuk</h4><span class="chip">Makan siang</span><span class="chip">Makan malam</span><span class="chip">Makan sendiri</span></div>
+      <div class="chip-group reveal"><h4>Pilihan Makan</h4><span class="chip">Makan siang</span><span class="chip">Makan malam</span><span class="chip">Hidangan penutup</span><span class="chip">Layanan pesan di meja</span></div>
+      <div class="chip-group reveal"><h4>Suasana</h4><span class="chip">Nyaman</span><span class="chip">Santai</span><span class="chip">Trendi</span></div>
+      <div class="chip-group reveal"><h4>Pembayaran</h4><span class="chip">Kartu debit</span><span class="chip">Kartu kredit</span><span class="chip">Pembayaran NFC</span></div>
+      <div class="chip-group reveal"><h4>Anak-anak &amp; Grup</h4><span class="chip">Cocok untuk anak-anak</span><span class="chip">Cocok untuk berkelompok</span><span class="chip">Menerima reservasi</span></div>
+      <div class="chip-group reveal"><h4>Parkir &amp; Fasilitas</h4><span class="chip">Banyak tempat parkir</span><span class="chip">Parkir gratis</span><span class="chip">Toilet</span></div>
+      <div class="chip-group reveal"><h4>Penawaran</h4><span class="chip">Kopi</span><span class="chip">Cepat saji</span><span class="chip">Alkohol</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FIND US -->
+<section id="findus" style="background:var(--cream-2);">
+  <div class="wrap split">
+    <div class="reveal">
+      <span class="eyebrow">Find Us</span>
+      <h2 style="margin-top:10px; font-size:clamp(1.8rem,4vw,2.4rem);">Kunjungi kami</h2>
+      <div class="info-list">
+        <div class="row"><div class="ic">📍</div><div><b>Alamat</b><span>TVRI Senayan Jakarta, Jl. Gerbang Pemuda, RT.1/RW.3, Gelora, Kec. Tanah Abang, Kota Jakarta Pusat, DKI Jakarta 10270</span></div></div>
+        <div class="row"><div class="ic">🚗</div><div><b>Parkir</b><span>Tersedia area parkir luas &amp; gratis di dalam kompleks TVRI Senayan.</span></div></div>
+        <div class="row"><div class="ic">🕒</div><div><b>Jam Buka</b><span>Setiap hari, 08.00–21.00 WIB</span></div></div>
+        <div class="row"><div class="ic">🏟️</div><div><b>Sekitar Lokasi</b><span>Berada di kawasan GBK Senayan — cocok mampir sebelum/sesudah olahraga atau CFD.</span></div></div>
+      </div>
+      <a href="https://www.instagram.com/tanahairjakarta" target="_blank" rel="noopener" class="btn btn-ghost" style="margin-top:22px;">📷 @tanahairjakarta</a>
+    </div>
+    <div class="map-frame reveal">
+      <iframe src="https://www.google.com/maps?q=TANAH+AIR+Resto+%26+Cafe,-6.213352,106.8007059&z=18&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Lokasi Tanah Air Resto & Cafe"></iframe>
+    </div>
+    <a href="https://maps.app.goo.gl/C4Eh5wBK66THjfXPA" target="_blank" rel="noopener" class="btn btn-ghost reveal" style="margin-top:14px; font-size:.82rem; padding:10px 18px;">🧭 Buka di Google Maps</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <a href="#home" class="logo">TANAH AIR<span>RESTO &amp; CAFE</span></a>
+      <p class="about">Masakan Nusantara rasa rumah, tampilan kekinian — di dalam kompleks TVRI Senayan, Jakarta Pusat.</p>
+      <div class="social-row">
+        <a href="https://www.instagram.com/tanahairjakarta" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+        <a href="tel:+62816800161" aria-label="Telepon">☎</a>
+        <a href="https://wa.me/62816800161" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+      </div>
+    </div>
+    <div>
+      <h5>Jelajahi</h5>
+      <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#whatsnew">What's New</a></li>
+        <li><a href="#experiences">Experiences</a></li>
+        <li><a href="#vouchers">Vouchers</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Layanan</h5>
+      <ul>
+        <li><a href="#reservations">Reservations</a></li>
+        <li><a href="#enquiry">Enquiry</a></li>
+        <li><a href="#feedback">Feedback</a></li>
+        <li><a href="#workwithus">Work With Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Kontak</h5>
+      <ul>
+        <li>TVRI Senayan, Jl. Gerbang Pemuda, Gelora, Tanah Abang, Jakarta Pusat 10270</li>
+        <li><a href="tel:+62816800161">0816-800-161</a></li>
+        <li>Setiap hari, 08.00–21.00 WIB</li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <span>© 2026 TANAH AIR Resto &amp; Cafe. Seluruh hak cipta dilindungi.</span>
+    <span>Dibuat dengan ❤️ untuk pecinta rasa Nusantara.</span>
+  </div>
+</footer>
+
+<a href="https://wa.me/62816800161?text=Halo%20Tanah%20Air%2C%20saya%20mau%20tanya-tanya" target="_blank" rel="noopener" class="float-wa" aria-label="Chat WhatsApp">💬</a>
+
+<script>
+// mobile nav
+const burger = document.getElementById('burgerBtn');
+const navLinks = document.getElementById('navLinks');
+burger.addEventListener('click', () => navLinks.classList.toggle('open'));
+navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+// scroll reveal
+const revealEls = document.querySelectorAll('.reveal');
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+}, {threshold:0.12});
+revealEls.forEach(el => io.observe(el));
+
+// menu tabs
+const tabBtns = document.querySelectorAll('.tab-btn');
+const panels = document.querySelectorAll('.menu-panel');
+tabBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    tabBtns.forEach(b => b.classList.remove('active'));
+    panels.forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelector('.menu-panel[data-panel="'+btn.dataset.tab+'"]').classList.add('active');
+  });
+});
+
+// review carousel
+const track = document.getElementById('reviewTrack');
+const dotsWrap = document.getElementById('revDots');
+const totalCards = track.children.length;
+let revIndex = 0;
+let revTimer = null;
+
+function visibleCount(){ return window.innerWidth < 720 ? 1 : (window.innerWidth < 1080 ? 2 : 3); }
+function maxIndex(){ return Math.max(0, totalCards - visibleCount()); }
+function cardWidth(){ return track.children[0].offsetWidth + 20; }
+
+function buildDots(){
+  dotsWrap.innerHTML = '';
+  for(let i=0; i<=maxIndex(); i++){
+    const d = document.createElement('span');
+    if(i === revIndex) d.classList.add('active');
+    d.addEventListener('click', () => { revIndex = i; updateTrack(); restartAutoplay(); });
+    dotsWrap.appendChild(d);
+  }
+}
+function updateTrack(){
+  revIndex = Math.max(0, Math.min(revIndex, maxIndex()));
+  track.style.transform = 'translateX(' + (-revIndex * cardWidth()) + 'px)';
+  [...dotsWrap.children].forEach((d,i) => d.classList.toggle('active', i === revIndex));
+}
+function goNext(){ revIndex = revIndex >= maxIndex() ? 0 : revIndex + 1; updateTrack(); }
+function goPrev(){ revIndex = revIndex <= 0 ? maxIndex() : revIndex - 1; updateTrack(); }
+function restartAutoplay(){
+  clearInterval(revTimer);
+  revTimer = setInterval(goNext, 4500);
+}
+
+document.getElementById('revNext').addEventListener('click', () => { goNext(); restartAutoplay(); });
+document.getElementById('revPrev').addEventListener('click', () => { goPrev(); restartAutoplay(); });
+document.querySelector('.review-track-wrap').addEventListener('mouseenter', () => clearInterval(revTimer));
+document.querySelector('.review-track-wrap').addEventListener('mouseleave', restartAutoplay);
+window.addEventListener('resize', () => { buildDots(); updateTrack(); });
+
+buildDots();
+updateTrack();
+restartAutoplay();
+
+// reservation time-slot picker (simulasi slot yang sudah dibooking)
+const slotGrid = document.getElementById('slotGrid');
+const resTimeInput = document.getElementById('resTime');
+const slotSelectedTxt = document.getElementById('slotSelectedTxt');
+const resDateInput = document.getElementById('resDate');
+const allSlots = ['08:00','08:30','09:00','09:30','10:00','10:30','11:00','11:30','12:00','12:30','13:00','13:30','14:00','14:30','15:00','15:30','16:00','16:30','17:00','17:30','18:00','18:30','19:00','19:30','20:00','20:30'];
+
+function seededTaken(dateStr){
+  // simulasi slot yang sudah dibooking, berbeda tiap tanggal (bukan data real-time, hanya ilustrasi)
+  let seed = 0;
+  for(const c of (dateStr || 'default')) seed += c.charCodeAt(0);
+  return allSlots.filter((_, i) => (i + seed) % 5 === 0);
+}
+
+function renderSlots(){
+  const taken = seededTaken(resDateInput.value);
+  slotGrid.innerHTML = '';
+  allSlots.forEach(t => {
+    const btn = document.createElement('div');
+    btn.className = 'slot' + (taken.includes(t) ? ' slot-taken' : '');
+    btn.textContent = t;
+    if(!taken.includes(t)){
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.slot').forEach(s => s.classList.remove('slot-selected'));
+        btn.classList.add('slot-selected');
+        resTimeInput.value = t;
+        slotSelectedTxt.textContent = 'Jam ' + t;
+      });
+    }
+    slotGrid.appendChild(btn);
+  });
+  resTimeInput.value = '';
+  slotSelectedTxt.textContent = 'Belum dipilih';
+}
+const todayStr = new Date().toISOString().split('T')[0];
+resDateInput.value = todayStr;
+resDateInput.min = todayStr;
+resDateInput.addEventListener('change', renderSlots);
+renderSlots();
+
+// star picker (feedback)
+let fbRating = 0;
+const stars = document.querySelectorAll('#starPicker span');
+stars.forEach(s => {
+  s.addEventListener('click', () => {
+    fbRating = parseInt(s.dataset.v);
+    stars.forEach(st => st.classList.toggle('active', parseInt(st.dataset.v) <= fbRating));
+  });
+});
+
+// forms: build whatsapp message + show confirmation (no backend)
+function handleForm(formId, msgId, buildText){
+  const form = document.getElementById(formId);
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    const text = buildText(form);
+    document.getElementById(msgId).classList.add('show');
+    window.open('https://wa.me/62816800161?text=' + encodeURIComponent(text), '_blank');
+  });
+}
+
+document.getElementById('resForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  if(!resTimeInput.value){
+    slotSelectedTxt.textContent = 'Pilih salah satu jam dulu ya';
+    slotSelectedTxt.style.color = 'var(--rattan)';
+    slotGrid.scrollIntoView({behavior:'smooth', block:'center'});
+    return;
+  }
+  const f = this;
+  const nama = f.querySelector('input[type=text]').value;
+  const wa = f.querySelector('input[type=tel]').value;
+  const tanggal = resDateInput.value;
+  const tamu = f.querySelector('input[type=number]').value;
+  const area = f.querySelector('select').value;
+  const catatan = f.querySelector('textarea').value;
+  const text = `Halo Tanah Air, saya ingin reservasi meja.\nNama: ${nama}\nWhatsApp: ${wa}\nTanggal: ${tanggal}\nJam: ${resTimeInput.value}\nJumlah Tamu: ${tamu}\nArea: ${area}\nCatatan: ${catatan || '-'}`;
+  document.getElementById('resMsg').classList.add('show');
+  window.open('https://wa.me/62816800161?text=' + encodeURIComponent(text), '_blank');
+});
+handleForm('enqForm','enqMsg', (f) => {
+  const v = f.querySelectorAll('input, textarea');
+  return `Halo Tanah Air, saya punya pertanyaan.\nNama: ${v[0].value}\nKontak: ${v[1].value}\nSubjek: ${v[2].value || '-'}\nPesan: ${v[3].value}`;
+});
+handleForm('fbForm','fbMsg', (f) => {
+  const v = f.querySelectorAll('input, textarea');
+  return `Halo Tanah Air, saya ingin kasih feedback.\nRating: ${fbRating || '-'}/5\nNama: ${v[0].value || 'Anonim'}\nMasukan: ${v[1].value}`;
+});
+handleForm('jobForm','jobMsg', (f) => {
+  const v = f.querySelectorAll('input, select, textarea');
+  return `Halo Tanah Air, saya ingin melamar kerja.\nNama: ${v[0].value}\nWhatsApp: ${v[1].value}\nPosisi: ${v[2].value}\nPengalaman: ${v[3].value || '-'}`;
+});
+</script>
+</body>
+</html>
